@@ -12,8 +12,8 @@ Demo project for React Native Tech-Interview only
 # Steps
 
 - Clone and pull this repo
-- Please use your code to implement the three views
-- Commit, push and pull request back to this repo
+- Use your code to implement the three views
+- Commit your changes, push them to this repository, and then submit a pull request
 
 # Full mockups:
 
