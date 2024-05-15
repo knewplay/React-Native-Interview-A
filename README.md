@@ -9,6 +9,12 @@ Demo project for React Native Tech-Interview only
 
 <img width="300" alt="Screenshot 2024-04-30 at 2 53 31 AM" src="https://github.com/knewplay/React-Native-Interview-A/assets/233022/6a5028dd-5737-40c5-9737-de2a6ced4740">
 
+# Steps
+
+- Clone and pull this repo
+- Please use your code to implement the three views
+- Commit, push and pull request back to this repo
+
 # Full mockups:
 
 https://www.figma.com/file/K5MKZbdlMzQQkY95aHj54s/Twitter-UI-Screens-(Community)?type=design&node-id=4-1245&mode=design&t=hV8BBcfjOZyd1KG6-0
