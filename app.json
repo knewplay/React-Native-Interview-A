@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "React-Native-Interview-A",
-    "slug": "React-Native-Interview-A",
+    "name": "xtwitter",
+    "slug": "xtwitter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "xtwitter",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "ca.knewplay.xtwitter"
     },
     "web": {
       "bundler": "metro",
