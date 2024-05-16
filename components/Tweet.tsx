@@ -40,7 +40,7 @@ export function Tweet({ item }: { item: TweetData }) {
         <View style={styles.tweetContainer}>
 
           {/*avatar*/}
-          <Link href={`user/${item.user}`}>
+          <Link href={`(tabs)/user/${item.user}`}>
             <Image source={item.avatar} style={styles.avatar}/>
           </Link>
 

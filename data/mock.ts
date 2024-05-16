@@ -59,6 +59,32 @@ But the end can happen for anyone at any time, & I can’t help but think of any
     retweets: 5,
     likes: 21
   },
+  {
+    id: 5,
+    type: "like",
+    info: "Kieron Dotson and Zack John liked",
+    userName: "Martha Craig",
+    user: "@craig_love",
+    time: "12h",
+    avatar: require("../assets/avata/1.png"),
+    message: "UXR/UX: You can only bring one item to a remote island to assist your research of native use of tools and usability. What do you bring? #TellMeAboutYou",
+    comments: 28,
+    retweets: 5,
+    likes: 21
+  },
+  {
+    id: 6,
+    type: "like",
+    info: "Zack John liked",
+    userName: "Maximmilian",
+    user: "@maxjacobson",
+    time: "3h",
+    avatar: require("../assets/avata/2.png"),
+    message: "Y’all ready for this next post?",
+    comments: 28,
+    retweets: 5,
+    likes: 21
+  },
 ];
 
 export const messages: MessageData[] = [
