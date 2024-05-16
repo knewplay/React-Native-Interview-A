@@ -9,7 +9,7 @@ export const tweets: TweetData[] = [
     userName: "Martha Craig",
     user: "@craig_love",
     time: "12h",
-    avatar: require("../assets/avata/1.png"),
+    avatar: require("@/assets/avatar/1.png"),
     message: "UXR/UX: You can only bring one item to a remote island to assist your research of native use of tools and usability. What do you bring? #TellMeAboutYou",
     comments: 28,
     retweets: 5,
@@ -22,7 +22,7 @@ export const tweets: TweetData[] = [
     userName: "Maximmilian",
     user: "@maxjacobson",
     time: "3h",
-    avatar: require("../assets/avata/2.png"),
+    avatar: require("@/assets/avatar/2.png"),
     message: "Y’all ready for this next post?",
     comments: 28,
     retweets: 5,
@@ -36,7 +36,7 @@ export const tweets: TweetData[] = [
     user: "@mis_potter",
     isVerified: true,
     time: "14h",
-    avatar: require("../assets/avata/3.png"),
+    avatar: require("@/assets/avatar/3.png"),
     message: `Kobe’s passing is really sticking w/ me in a way I didn’t expect.
 
 He was an icon, the kind of person who wouldn’t die this way. My wife compared it to Princess Di’s accident.
@@ -53,7 +53,7 @@ But the end can happen for anyone at any time, & I can’t help but think of any
     userName: "karennne",
     user: "@karennne",
     time: "10h",
-    avatar: require("../assets/avata/4.png"),
+    avatar: require("@/assets/avatar/4.png"),
     message: "Y’all ready for this next post?",
     comments: 28,
     retweets: 5,
@@ -66,7 +66,7 @@ But the end can happen for anyone at any time, & I can’t help but think of any
     userName: "Martha Craig",
     user: "@craig_love",
     time: "12h",
-    avatar: require("../assets/avata/1.png"),
+    avatar: require("@/assets/avatar/1.png"),
     message: "UXR/UX: You can only bring one item to a remote island to assist your research of native use of tools and usability. What do you bring? #TellMeAboutYou",
     comments: 28,
     retweets: 5,
@@ -79,7 +79,7 @@ But the end can happen for anyone at any time, & I can’t help but think of any
     userName: "Maximmilian",
     user: "@maxjacobson",
     time: "3h",
-    avatar: require("../assets/avata/2.png"),
+    avatar: require("@/assets/avatar/2.png"),
     message: "Y’all ready for this next post?",
     comments: 28,
     retweets: 5,
@@ -90,7 +90,7 @@ But the end can happen for anyone at any time, & I can’t help but think of any
 export const messages: MessageData[] = [
   {
     id: 1,
-    avatar: require("../assets/avata/1.png"),
+    avatar: require("@/assets/avatar/1.png"),
     name: 'AzizDjan',
     username: '@A_AzizDjan',
     date: '12/2/19',
@@ -98,7 +98,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 2,
-    avatar: require("../assets/avata/2.png"),
+    avatar: require("@/assets/avatar/2.png"),
     name: 'Andrew Parker',
     username: '@andrewww_',
     date: '12/1/19',
@@ -106,7 +106,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 3,
-    avatar: require("../assets/avata/3.png"),
+    avatar: require("@/assets/avatar/3.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',
@@ -114,7 +114,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 4,
-    avatar: require("../assets/avata/4.png"),
+    avatar: require("@/assets/avatar/4.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',
@@ -122,7 +122,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 5,
-    avatar: require("../assets/avata/1.png"),
+    avatar: require("@/assets/avatar/1.png"),
     name: 'AzizDjan',
     username: '@A_AzizDjan',
     date: '12/2/19',
@@ -130,7 +130,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 6,
-    avatar: require("../assets/avata/2.png"),
+    avatar: require("@/assets/avatar/2.png"),
     name: 'Andrew Parker',
     username: '@andrewww_',
     date: '12/1/19',
@@ -138,7 +138,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 7,
-    avatar: require("../assets/avata/3.png"),
+    avatar: require("@/assets/avatar/3.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',
@@ -146,7 +146,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 8,
-    avatar: require("../assets/avata/4.png"),
+    avatar: require("@/assets/avatar/4.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',
@@ -154,7 +154,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 9,
-    avatar: require("../assets/avata/1.png"),
+    avatar: require("@/assets/avatar/1.png"),
     name: 'AzizDjan',
     username: '@A_AzizDjan',
     date: '12/2/19',
@@ -162,7 +162,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 10,
-    avatar: require("../assets/avata/2.png"),
+    avatar: require("@/assets/avatar/2.png"),
     name: 'Andrew Parker',
     username: '@andrewww_',
     date: '12/1/19',
@@ -170,7 +170,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 11,
-    avatar: require("../assets/avata/3.png"),
+    avatar: require("@/assets/avatar/3.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',
@@ -178,7 +178,7 @@ export const messages: MessageData[] = [
   },
   {
     id: 12,
-    avatar: require("../assets/avata/4.png"),
+    avatar: require("@/assets/avatar/4.png"),
     name: 'Komol Kuchkarov',
     username: '@kkuckkarov',
     date: '12/1/19',

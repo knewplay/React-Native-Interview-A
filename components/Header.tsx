@@ -21,7 +21,7 @@ export default function Header({ title, bottomChild }: HeaderProps) {
         justifyContent: 'space-between',
         paddingHorizontal: 20,
       }}>
-        <Image source={require('@/assets/avata/0.png')} style={{
+        <Image source={require('@/assets/avatar/0.png')} style={{
           height: 32,
           width: 32,
           borderRadius: 32

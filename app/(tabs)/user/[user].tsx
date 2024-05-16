@@ -33,7 +33,7 @@ const profileHeader = () => (
     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
       <View>
         <Image
-          source={require('@/assets/avata/0.png')}
+          source={require('@/assets/avatar/0.png')}
           style={styles.profileImage}
         />
         <View>
