@@ -13,18 +13,11 @@ export default function MessagesTab() {
         <Header
           title="Messages"
           bottomChild={
-            <View style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              margin: 16,
-              backgroundColor: '#F5F8FA',
-              borderRadius: 80,
-              height: 32
-            }}>
-              <Ionicons name="search" size={13} color="#687684" style={{ marginLeft: 9.5 }}/>
+            <View style={styles.searchContainer}>
+              <Ionicons name="search" size={13} color="#687684" style={styles.searchIcon}/>
               <TextInput
                 placeholder="Search for people and groups"
-                style={{ flex: 1, marginLeft: 6.5, fontSize: 17 }}
+                style={styles.searchInput}
               />
             </View>
           }
@@ -40,30 +33,39 @@ export default function MessagesTab() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
-  },
-  headerText: {
-    fontWeight: 'bold',
-    fontSize: 18,
-  },
-  headerIcons: {
-    flexDirection: 'row',
-  },
-  searchContainer: {},
-  searchIcon: {
-    marginRight: 10,
-  },
-  searchInput: {
-    flex: 1,
-  },
-});
+    container: {
+      backgroundColor: 'white',
+    },
+    header: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      padding: 10,
+      borderBottomWidth: 1,
+      borderBottomColor: '#ddd',
+    },
+    headerText: {
+      fontWeight: 'bold',
+      fontSize: 18,
+    },
+    headerIcons: {
+      flexDirection: 'row',
+    },
+    searchContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      margin: 16,
+      backgroundColor: '#F5F8FA',
+      borderRadius: 80,
+      height: 32
+    },
+    searchIcon: {
+      marginLeft: 9.5,
+    },
+    searchInput: {
+      flex: 1, marginLeft:
+        6.5, fontSize:
+        17
+    }
+  })
+;

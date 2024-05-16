@@ -1,77 +1,101 @@
 import React from 'react';
-import {FlatList, Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {FlatList, Image, ImageSourcePropType, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Feather, Ionicons} from '@expo/vector-icons';
 import {SafeAreaView} from "react-native-safe-area-context";
 import {Tweet, TweetData} from "@/components/Tweet";
-import {tweets} from "@/data/mock";
+import {userInfo} from "@/data/mock";
+import {useNavigation} from "expo-router";
 
-const User = () => {
+export interface UserInfo {
+  avatar: ImageSourcePropType
+  user: string,
+  userName: string,
+  bio: string,
+  link: string,
+  joined: string,
+  following: number,
+  followers: number,
+  tweets: TweetData[]
+}
+
+const UserProfile = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.container}>
-      <View style={[styles.header]}>
-        <TouchableOpacity onPress={() => {
-        }}>
-          <Ionicons name="chevron-back" size={24} color="white"/>
-        </TouchableOpacity>
-      </View>
-      {profileHeader()}
+      <TopNav onPress={navigation.goBack}/>
+
       <FlatList
         nestedScrollEnabled={true}
-        data={tweets}
+        data={userInfo.tweets}
         renderItem={({ item }: { item: TweetData }) => <Tweet item={item}/>}
         keyExtractor={(item) => item.id.toString()}
         scrollEventThrottle={16}
-        ListHeaderComponent={tabs}
-        stickyHeaderIndices={[0]}
+        ListHeaderComponent={
+          <View>
+            <ProfileHeader userInfo={userInfo}/>
+            <Tabs/>
+          </View>
+        }
       />
+
     </SafeAreaView>
   );
 };
 
-const profileHeader = () => (
+const TopNav = ({ onPress }: { onPress: () => void }) => (
+  <View style={[styles.header]}>
+    <TouchableOpacity onPress={onPress}>
+      <Ionicons name="chevron-back" size={24} color="white"/>
+    </TouchableOpacity>
+  </View>
+);
+
+const ProfileHeader = ({ userInfo }: { userInfo: UserInfo }) => (
   <View style={styles.profileHeader}>
     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
       <View>
         <Image
-          source={require('@/assets/avatar/0.png')}
+          source={userInfo.avatar}
           style={styles.profileImage}
         />
         <View>
-          <Text style={styles.profileName}>Pixsellz</Text>
-          <Text style={styles.profileUsername}>@pixsellz</Text>
+          <Text style={styles.profileName}>{userInfo.userName}</Text>
+          <Text style={styles.profileUsername}>{userInfo.user}</Text>
         </View>
       </View>
-      <Text style={styles.editProfileText}>Edit profile</Text>
+      <TouchableOpacity>
+        <Text style={styles.editProfileText}>Edit profile</Text>
+      </TouchableOpacity>
     </View>
 
     <Text style={styles.profileBio}>
-      Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations
+      {userInfo.bio}
     </Text>
 
     <View style={styles.profileStats}>
       <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Feather name="link" size={16} color='#687684'/>
-        <Text style={styles.profileStatText}> pixsellz.io</Text>
+        <Text style={styles.profileStatText}> {userInfo.link}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={{ flexDirection: 'row' }}>
         <Feather name="calendar" size={16} color="gray"/>
-        <Text style={styles.profileStatText}>Joined September 2018</Text>
+        <Text style={styles.profileStatText}> Joined {userInfo.joined}</Text>
       </TouchableOpacity>
     </View>
 
     <View style={styles.profileStats}>
       <Text style={styles.profileStatText}>
-        <Text style={{ color: "#141619", fontWeight: '600' }}>217 </Text>
+        <Text style={{ color: "#141619", fontWeight: '600' }}>{userInfo.following} </Text>
         Following</Text>
       <Text style={styles.profileStatText}>
-        <Text style={{ color: "#141619", fontWeight: '600' }}>118 </Text>
+        <Text style={{ color: "#141619", fontWeight: '600' }}>{userInfo.followers} </Text>
         Followers</Text>
     </View>
   </View>
-
 )
 
-const tabs = () => (
+const Tabs = () => (
   <View style={styles.tabsContainer}>
     <TouchableOpacity style={styles.tabActive}>
       <Text style={styles.tabTextActive}>Tweets</Text>
@@ -90,7 +114,6 @@ const tabs = () => (
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: 'white',
   },
   header: {
@@ -256,4 +279,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default User;
+export default UserProfile;

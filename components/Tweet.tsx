@@ -36,7 +36,6 @@ export function Tweet({ item }: { item: TweetData }) {
                        containerStyle={{ marginLeft: 42 }}
         />
 
-        {/*tweet content*/}
         <View style={styles.tweetContainer}>
 
           {/*avatar*/}

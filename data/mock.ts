@@ -1,5 +1,6 @@
 import {MessageData} from "@/components/Message";
 import {TweetData} from "@/components/Tweet";
+import {UserInfo} from "@/app/(tabs)/user/[user]";
 
 export const tweets: TweetData[] = [
   {
@@ -185,4 +186,17 @@ export const messages: MessageData[] = [
     message: 'You accepted the request',
   },
 ];
+
+export const userInfo: UserInfo = {
+  avatar: require("@/assets/avatar/0.png"),
+  user: "@pixsellz",
+  userName: "Pixsellz",
+  bio: "Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations",
+  link: "pixsellz.io",
+  joined: "September 2018",
+  following: 217,
+  followers: 118,
+  tweets: tweets
+}
+
 
