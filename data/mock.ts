@@ -1,4 +1,5 @@
-import {TweetData} from "@/data/tweet";
+import {MessageData} from "@/components/Message";
+import {TweetData} from "@/components/Tweet";
 
 export const tweets: TweetData[] = [
   {
@@ -59,3 +60,103 @@ But the end can happen for anyone at any time, & I can’t help but think of any
     likes: 21
   },
 ];
+
+export const messages: MessageData[] = [
+  {
+    id: 1,
+    avatar: require("../assets/avata/1.png"),
+    name: 'AzizDjan',
+    username: '@A_AzizDjan',
+    date: '12/2/19',
+    message: "You: You’re very welcome AzizDjan!",
+  },
+  {
+    id: 2,
+    avatar: require("../assets/avata/2.png"),
+    name: 'Andrew Parker',
+    username: '@andrewww_',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 3,
+    avatar: require("../assets/avata/3.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 4,
+    avatar: require("../assets/avata/4.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You: I would greatly appreciate if you could retweet this if you think its worthy :)',
+  },
+  {
+    id: 5,
+    avatar: require("../assets/avata/1.png"),
+    name: 'AzizDjan',
+    username: '@A_AzizDjan',
+    date: '12/2/19',
+    message: "You: You're very welcome AzizDjan!",
+  },
+  {
+    id: 6,
+    avatar: require("../assets/avata/2.png"),
+    name: 'Andrew Parker',
+    username: '@andrewww_',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 7,
+    avatar: require("../assets/avata/3.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 8,
+    avatar: require("../assets/avata/4.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 9,
+    avatar: require("../assets/avata/1.png"),
+    name: 'AzizDjan',
+    username: '@A_AzizDjan',
+    date: '12/2/19',
+    message: "You: You're very welcome AzizDjan!",
+  },
+  {
+    id: 10,
+    avatar: require("../assets/avata/2.png"),
+    name: 'Andrew Parker',
+    username: '@andrewww_',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 11,
+    avatar: require("../assets/avata/3.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+  {
+    id: 12,
+    avatar: require("../assets/avata/4.png"),
+    name: 'Komol Kuchkarov',
+    username: '@kkuckkarov',
+    date: '12/1/19',
+    message: 'You accepted the request',
+  },
+];
+

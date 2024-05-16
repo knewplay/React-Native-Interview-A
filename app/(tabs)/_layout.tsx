@@ -26,7 +26,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ExploreTab"
         options={{
           title: 'Explore',
           tabBarShowLabel: false,
@@ -36,7 +36,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="notify"
+        name="NotifyTab"
         options={{
           title: 'Notify',
           tabBarShowLabel: false,
@@ -46,7 +46,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="message"
+        name="MessagesTab"
         options={{
           title: 'Message',
           tabBarIcon: ({ focused }) => (
@@ -55,6 +55,5 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
-  )
-    ;
+  );
 }
